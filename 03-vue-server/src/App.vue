@@ -30,8 +30,6 @@ export default {
           numColumns.forEach(col => point[col] = +d[col]);
           return point;
         });
-        this.species.options = Array.from(new Set(data.map(d => d.species)));
-        this.species.selected = this.species.options[0];
       });
   },
   components: {
@@ -53,14 +51,12 @@ export default {
   },
   data() {
     return {
-      species: { options: [], selected: ""},
-
       points: [],
       xVar: "sepal_length",
       yVar: "petal_width",
       margin: 10,
       width: 300,
-      height: 200,
+      height: 200
     }
   },
 }

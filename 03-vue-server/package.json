@@ -10,7 +10,6 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "d3": "^6.5.0",
-    "d3-axis": "^2.0.0",
     "vue": "^3.0.0"
   },
   "devDependencies": {
