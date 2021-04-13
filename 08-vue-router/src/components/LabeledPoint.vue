@@ -15,8 +15,8 @@ export default {
     x: Number,
     y: Number,
     r: Number,
-    fill: Number,
-    text: String
+    fill: String,
+    text: String,
   }
 }
 </script>
@@ -25,6 +25,7 @@ export default {
 <style scoped>
 .labeled-point text {
   opacity: 0;
+  pointer-events: none;
 }
 .labeled-point:hover text {
   opacity: 1;

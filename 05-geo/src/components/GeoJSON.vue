@@ -1,22 +1,13 @@
 <template>
-  <g 
-    class="labeled-point"
-    :transform="`translate(${x}, ${y})`"
-  >
-    <circle :r="r" :fill="fill"></circle>
-    <text>{{ text }}</text>
-  </g>
+  <svg>
+
+  </svg>
 </template>
 
 <script>
 export default {
-  name: 'LabeledPoint',
+  name: 'GeoJSON',
   props: {
-    x: Number,
-    y: Number,
-    r: Number,
-    fill: Number,
-    text: String
   }
 }
 </script>
@@ -25,6 +16,7 @@ export default {
 <style scoped>
 .labeled-point text {
   opacity: 0;
+  pointer-events: none;
 }
 .labeled-point:hover text {
   opacity: 1;

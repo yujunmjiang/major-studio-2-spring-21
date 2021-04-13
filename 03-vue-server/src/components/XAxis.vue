@@ -1,24 +1,12 @@
 <template>
-  <g 
-    class="axis x-axis"
-    :transform="`translate(0, ${yTranslate})`"
-  >
+  <g class="axis x-axis">
   </g>
 </template>
 
 <script>
-import { select, axisBottom } from 'd3'
-
 export default {
   name: 'XAxis',
-  props: {
-    xScale: Function,
-    yTranslate: Number
-  },
-  updated() {
-    select('.x-axis')
-      .call(axisBottom(this.xScale).ticks(10))
-  }
+  props: {}
 }
 </script>
 
